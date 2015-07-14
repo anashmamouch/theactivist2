@@ -16,7 +16,7 @@ gem 'paperclip', '~> 4.3.0'
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 
 gem 'pg', :group => [:production]
-
+gem 'rake', '~> 10.4.2' :group => [:production]
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug'
