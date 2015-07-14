@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/doabit/semantic-ui-sass.git
+  revision: 84fbf0a8ce018238fa189928988dcb2d5355686a
+  specs:
+    semantic-ui-sass (1.12.3.0)
+      sass (~> 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -180,6 +187,7 @@ DEPENDENCIES
   rails (= 4.2.3)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  semantic-ui-sass!
   simple_form (~> 3.1.0)
   spring
   sqlite3
