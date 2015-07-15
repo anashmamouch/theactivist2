@@ -4,5 +4,7 @@
   %p
     = post.comment.count
     Comments
-
+  %p
+    = post.get_likes.count
+    Likes
 = link_to "Add new", new_post_path

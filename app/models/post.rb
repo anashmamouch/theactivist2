@@ -1,6 +1,8 @@
 class Post < ActiveRecord::Base
+  acts_as_votable
   belongs_to :user
   has_many :comment
-  has_attached_file :image, :styles => { :medium => "700x400#", :small => "350x250>" }, :default_url => "/assets/images/:style/missing.png"
+
+  has_attached_file :image, :styles => { :medium => "700x400#", :small => "350x250>" }, :default_url => "missing.png"
   validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
 end
