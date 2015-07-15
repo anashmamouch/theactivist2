@@ -1,0 +1,5 @@
+= simple_form_for([@post, @comments.build], :html=> { class: "ui reply form" } ) do |f|
+  .field
+    = f.input :content, label: "Reply to thread"
+
+  = f.button :submit, label: "Add Comment", class: "ui primary submit labeled button"

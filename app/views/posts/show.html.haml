@@ -4,6 +4,19 @@
 %p= @post.description
 %p= @post.user.name
 
+.ui.comments
+  %h2.ui.dividing.header= pluralize(@comments.count, "Comment")
+  - @comments.each do |comment|
+    .comment
+      %a.avatar
+        = image_tag "user.png"
+      .content
+        %a.author= comment.user.name
+        .metadata
+          %span.date= comment.created_at
+        .text= comment.content
+
+  = render 'comments/form'
 =link_to 'edit', edit_post_path
 =link_to 'delete', post_path(@post), method: :delete, data:{ confirm: "Are you sure?" }
 
